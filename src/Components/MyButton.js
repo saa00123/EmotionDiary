@@ -1,5 +1,5 @@
 const MyButton = ({ text, type, onClick }) => {
-  const btnType = ["positive", "nagative"].includes(type) ? type : "default";
+  const btnType = ["positive", "negative"].includes(type) ? type : "default";
 
   return (
     <button
