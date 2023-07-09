@@ -3,7 +3,7 @@ import React, {
   useRef,
   useContext,
   useEffect,
-  useCallBack,
+  useCallback,
 } from "react";
 import { useNavigate } from "react-router-dom";
 import { DiaryDispatchContext } from "../App";
@@ -25,7 +25,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
 
   const { onCreate, onEdit, onRemove } = useContext(DiaryDispatchContext);
 
-  const handleClickEmote = useCallBack((emotion) => {
+  const handleClickEmote = useCallback((emotion) => {
     setEmotion(emotion);
   }, []);
 
